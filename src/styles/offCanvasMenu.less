@@ -1,0 +1,66 @@
+.off-canvas-menu__links {
+	list-style: none;
+    width: 100%;
+    padding: 0;
+    margin: 30px 0 0 0;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    overflow-y: scroll;
+    height: 100%;
+
+    a {
+		color: #443729;
+		text-decoration: none;
+		display: block;
+	    padding: 10px 30px;
+
+	    &:hover {
+			color: #9e886f;
+	    }
+	}
+}
+
+.off-canvas-menu__wrapper {
+	position: fixed;
+	display: none;
+	top: 0;
+	left: 0;
+	width: 300px;
+	height: 100%;
+	background: #DDC8B0;
+
+	&.show {
+		display: block;
+	}
+}
+
+.off-canvas-menu__main-button {
+	border: none;
+	background: transparent;
+	cursor: pointer;
+
+	&:before {
+		display: block;
+		width: 30px;
+		height: 25px;
+		content: '';
+		background: linear-gradient(#373a47 20%, transparent 20%, transparent 40%, #373a47 40%, #373a47 60%, transparent 60%, transparent 80%, #373a47 80%);	
+	}
+}
+
+.off-canvas-menu__close-button {
+	border: none;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: transparent;
+
+	&:before {
+		width: 25px;
+		height: 25px;
+		cursor: pointer;
+		content: '';
+		display: block;
+		background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNDguMzMzIiBoZWlnaHQ9IjM0OC4zMzQiIHZpZXdCb3g9IjAgMCAzNDguMzMzIDM0OC4zMzQiIGZpbGw9IiM0NDM3MjkiPjxwYXRoIGQ9Ik0zMzYuNTU5IDY4LjYxMUwyMzEuMDE2IDE3NC4xNjVsMTA1LjU0MyAxMDUuNTQ5YzE1LjY5OSAxNS43MDUgMTUuNjk5IDQxLjE0NSAwIDU2Ljg1LTcuODQ0IDcuODQ0LTE4LjEyOCAxMS43NjktMjguNDA3IDExLjc2OS0xMC4yOTYgMC0yMC41ODEtMy45MTktMjguNDE5LTExLjc2OUwxNzQuMTY3IDIzMS4wMDMgNjguNjA5IDMzNi41NjNjLTcuODQzIDcuODQ0LTE4LjEyOCAxMS43NjktMjguNDE2IDExLjc2OS0xMC4yODUgMC0yMC41NjMtMy45MTktMjguNDEzLTExLjc2OS0xNS42OTktMTUuNjk4LTE1LjY5OS00MS4xMzkgMC01Ni44NWwxMDUuNTQtMTA1LjU0OUwxMS43NzQgNjguNjExYy0xNS42OTktMTUuNjk5LTE1LjY5OS00MS4xNDUgMC01Ni44NDQgMTUuNjk2LTE1LjY4NyA0MS4xMjctMTUuNjg3IDU2LjgyOSAwbDEwNS41NjMgMTA1LjU1NEwyNzkuNzIxIDExLjc2N2MxNS43MDUtMTUuNjg3IDQxLjEzOS0xNS42ODcgNTYuODMyIDAgMTUuNzA1IDE1LjY5OSAxNS43MDUgNDEuMTQ1LjAwNiA1Ni44NDR6Ii8+PC9zdmc+') center center no-repeat;
+		background-size: 12px;
+	}
+}

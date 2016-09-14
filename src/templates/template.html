@@ -1,0 +1,12 @@
+<link rel="stylesheet" type="text/css" href="offCanvasMenu.css">
+
+<button class="off-canvas-menu__main-button" ng-click="vm.changeShouldShow(true)"></button>
+
+<div ng-show="vm.shouldShow" class="off-canvas-menu__wrapper" ng-class="{'show': vm.shouldShow}">
+	<button class="off-canvas-menu__close-button" ng-click="vm.changeShouldShow(false)"></button>
+	<ul class="off-canvas-menu__links">
+		<li ng-repeat="element in vm.menu track by element.url">
+			<a ng-href="{{element.url}}" ng-bind="element.anchor"></a>
+		</li>
+	</ul>
+</div>
